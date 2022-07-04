@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./Assets/CSS/index.css" />
+
+    <title>Linea del tiempo - Pablo César Pisquiy Pacajá 1168921</title>
 </head>
+
 <body>
-    
+    <main class="Inicio">
+        <div class="Titulos">
+            <h1>Linea del tiempo sobre los temas del curso Desarrollo del Ser Humano</h1>
+            <h2>Pablo César Pisquiy Pacajá - 1168921</h2>
+            <p>Esta linea del tiempo contiene un resumen de todo lo aprendido durante el curso que fue llevado en
+                interciclo</p>
+        </div>
+        <div class="Contenido">
+            <div class="cards">
+                <div class="card" id="card_SentidoVida">
+                    <img src="./Assets/images/SVIda.jpg" class="img-card" />
+                    <div class="Descripcion">
+                        <h2 class="Fecha">Semana 1</h2>
+                        <h3 class="Titulo">Sentido de la vida</h3>
+                    </div>
+                    <a href="#Modal" class="button_card" id="btn_Sentido_Vida">+ Info</a>
+                </div>
+                <div class="card" id="card_vida">
+                    <img src="./Assets/images/Yo.png" class="img-card" />
+                    <div class="Descripcion">
+                        <h2 class="Fecha">Semana 2 y 3</h2>
+                        <h3 class="Titulo">Yo!</h3>
+                    </div>
+                    <a href="#Modal" class="button_card" id="btn_Yo">+ Info</a>
+                </div>
+                <div class="card" id="card_Familia">
+                    <img src="./Assets/images/Familia.jpg" class="img-card" />
+                    <div class="Descripcion">
+                        <h2 class="Fecha">Semana 4 y 5</h2>
+                        <h3 class="Titulo">La familia</h3>
+                    </div>
+                    <a href="#Modal" class="button_card" id="btn_LaFamilia">+ Info</a>
+                </div>
+                <div class="card" id="card_Libertad">
+                    <img src="./Assets/images/Libertad.png" class="img-card" />
+                    <div class="Descripcion">
+                        <h2 class="Fecha">Semana 6</h2>
+                        <h3 class="Titulo">La libertad</h3>
+                    </div>
+                    <a href="#Modal" class="button_card" id="btn_Libertad">+ Info</a>
+                </div>
+                <div class="card" id="card_Muerte">
+                    <img src="./Assets/images/Muerte.jpg" class="img-card" />
+                    <div class="Descripcion">
+                        <h2 class="Fecha">Semana 7</h2>
+                        <h3 class="Titulo">Sentido de la muerte</h3>
+                    </div>
+                    <a class="button_card" id="btn_Muerte" href="#Modal">+ Info</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="Modal">
+        <div class="modal-contenido">
+            <div class="Exit">
+                <a href="#"><img src="./Assets/images/cancelar.png" alt="cancelar.png" height="50px"></a>
+            </div>
+            <div class="descripcion" id="Descripcion_Modal">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptate sequi blanditiis quidem,
+                voluptas rem eaque suscipit incidunt possimus voluptates, ullam reprehenderit sit omnis repellendus
+                doloremque delectus officiis deleniti corporis. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Eius voluptates autem soluta similique expedita quos quae exercitationem fugiat excepturi,
+                reiciendis dolore omnis doloribus. Officiis cupiditate corrupti consequuntur accusamus ab velit?. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit quod dicta autem repellendus ipsam quas
+                accusamus temporibus, totam repudiandae est architecto, iusto quidem. Est velit aut asperiores cumque
+                quos?
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <img src="./Assets/images/Familia.jpg" height="200px" id="imgModal">
+            </div>
+        </div>
+    </div>
+<script src="./Assets/Js/Index.js"></script>
 </body>
 </html>
