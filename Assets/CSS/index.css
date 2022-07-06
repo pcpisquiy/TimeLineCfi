@@ -7,7 +7,7 @@
   font-family: 'Queen Emirates';
   src: url("../Fonts/Queen_Emirates.ttf");
 }
-*{
+body{
   padding: 0;
   margin: 0;
 }
