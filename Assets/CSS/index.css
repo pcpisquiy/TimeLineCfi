@@ -7,7 +7,10 @@
   font-family: 'Queen Emirates';
   src: url("../Fonts/Queen_Emirates.ttf");
 }
-
+*{
+  padding: 0;
+  margin: 0;
+}
 .Inicio {
   background-color: #f0ebe2;
   height: 100vh;
