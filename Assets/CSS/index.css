@@ -34,10 +34,34 @@
 .Contenido {
   overflow: hidden;
   padding-left: 2px;
-  padding-top: 70px;
+  padding-top: 20px;
   background-color: #e4e1d7;
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
+}
+
+.linea {
+  height: 15px;
+  background-color: #c50000;
+  border-radius: 1rem;
+  margin-bottom: 40px;
+}
+
+.Conector {
+  border-radius: 0.5rem;
+  height: 65px;
+  width: 30px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transform: translateY(-230px);
+          transform: translateY(-230px);
+  background-color: #2485e0;
+}
+
+#card_yo .Conector, #card_Libertad .Conector {
+  height: 83px;
+  -webkit-transform: translateY(-220px);
+          transform: translateY(-220px);
 }
 
 .cards {
@@ -49,7 +73,6 @@
 }
 
 .card {
-  border-radius: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +90,7 @@
 
 .img-card {
   border-radius: 1.5rem;
+  z-index: 9;
 }
 
 .card:nth-child(odd) .img-card {
@@ -99,6 +123,18 @@
   text-align: center;
 }
 
+#card_Familia {
+  background-color: #6b93e7d2;
+  border-radius: 1.50rem;
+  -webkit-box-shadow: 15px -15px 15px #0050fcd2;
+          box-shadow: 15px -15px 15px #0050fcd2;
+}
+
+#card_Familia:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .modal-contenido {
   background-color: #2485e0;
   width: 50rem;
@@ -112,6 +148,7 @@
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
+  z-index: 12;
   top: 0;
   right: 0;
   bottom: 0;
@@ -125,6 +162,7 @@
 #Modal:target {
   opacity: 1;
   pointer-events: auto;
+  z-index: 12;
 }
 
 .Exit {

@@ -16,22 +16,39 @@ $Descripcion: 'Tactico'
 .Contenido
     overflow: hidden
     padding-left: 2px
-    padding-top: 70px
+    padding-top: 20px
     background-color: #e4e1d7
-    height: 60vh
+    height: 65vh
     width: 100vw
+.linea
+    height: 15px
+    background-color: #c50000
+    border-radius: 1rem
+    margin-bottom: 40px
+.Conector
+    border-radius: 0.5rem
+    height: 65px
+    width: 30px
+    position: absolute
+    z-index: 3
+    transform: translateY(-230px)
+    background-color: #2485e0
+#card_yo .Conector ,#card_Libertad .Conector 
+    height: 83px
+    transform: translateY(-220px)
+
 .cards
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr))
     gap: 20px 
 .card
-    border-radius: 1.5rem
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
 .img-card
     border-radius: 1.5rem
+    z-index: 9
 .card:nth-child(odd) .img-card 
     height: 250px
 .card:nth-child(even) .img-card 
@@ -53,7 +70,12 @@ $Descripcion: 'Tactico'
     font-family: $Titulos
     text-align: center
 
-
+#card_Familia
+    background-color: #6b93e7d2
+    border-radius: 1.50rem
+    box-shadow: 15px -15px 15px #0050fcd2
+#card_Familia:hover
+    transform: scale(1.2)
 .modal-contenido
   background-color: #2485e0
   width: 50rem
@@ -65,6 +87,7 @@ $Descripcion: 'Tactico'
 .modal
   background-color: rgba(0,0,0,.8)
   position: fixed
+  z-index: 12
   top: 0
   right: 0
   bottom: 0
@@ -76,6 +99,7 @@ $Descripcion: 'Tactico'
 #Modal:target
   opacity: 1 
   pointer-events: auto
+  z-index: 12
 .Exit 
     display: flex
     justify-content: end
